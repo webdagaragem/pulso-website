@@ -1,4 +1,5 @@
 import { Wrench, Satellite, Sprout, Radio, Gauge, Navigation, Package, GraduationCap } from "lucide-react";
+import { Seo } from "@/components/Seo";
 
 const services = [
   { icon: Wrench, title: "Assistência Técnica Especializada", desc: "Manutenção e reparo de tratores, colheitadeiras, pulverizadores, plantadeiras e implementos agrícolas em geral.", isTopcon: false },
@@ -14,11 +15,12 @@ const services = [
 const Servicos = () => {
   return (
     <div className="container py-16 md:py-24">
+      <Seo path="/servicos" />
       <div className="max-w-3xl">
         <span className="text-primary font-semibold uppercase tracking-[0.2em] text-sm">O que fazemos</span>
-        <h1 className="mt-3 font-display text-5xl md:text-6xl font-extrabold uppercase leading-none">Soluções para o Campo</h1>
+        <h1 className="mt-3 font-display text-5xl md:text-6xl font-extrabold uppercase leading-none">Assistência Técnica em Máquinas Agrícolas</h1>
         <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-          Transformamos problemas técnicos em produtividade — com conhecimento especializado e tecnologia de precisão aplicada ao campo.
+          Manutenção e reparo de tratores, colheitadeiras, pulverizadores, plantadeiras e implementos agrícolas em Juara e no Médio Norte de Mato Grosso. Como concessionária oficial Topcon, instalamos monitores, receptores e pilotos elétricos e hidráulicos, com especialidade na linha Massey Ferguson.
         </p>
       </div>
 

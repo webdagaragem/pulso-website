@@ -12,15 +12,15 @@ type Slide = { bg: string; title: string; subtitle: string; cta1: CTA; cta2: CTA
 const slides: Slide[] = [
   {
     bg: hero1,
-    title: "Tecnologia de Precisão no Campo",
-    subtitle: "Assistência técnica especializada, agricultura de precisão e soluções tecnológicas aplicadas — com o suporte que o produtor do agro merece.",
+    title: "Oficina de Tratores e Colheitadeiras",
+    subtitle: "Manutenção e reparo de tratores, colheitadeiras, pulverizadores, plantadeiras e implementos agrícolas em Juara, Mato Grosso.",
     cta1: { label: "Conheça Nossos Serviços", to: "/servicos" },
     cta2: { label: "Fale pelo WhatsApp", href: "https://wa.me/5566996615516" },
   },
   {
     bg: hero2,
     title: "Concessionária Topcon no Médio Norte de Mato Grosso",
-    subtitle: "Pilotos automáticos, sinais de correção, monitores e sistemas de precisão — tecnologia reconhecida mundialmente com suporte técnico especializado na sua região.",
+    subtitle: "Monitores, receptores e pilotos automáticos para tratores e colheitadeiras, com suporte técnico no Médio Norte de Mato Grosso.",
     cta1: { label: "Solicitar Atendimento", to: "/contato" },
     cta2: { label: "Ver Soluções Topcon", to: "/servicos" },
   },
@@ -53,9 +53,15 @@ export const HeroSlider = () => {
 
           <div className="relative h-full container flex items-center">
             <div className="max-w-2xl">
-              <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-[0.95] text-foreground">
-                {s.title}
-              </h1>
+              {i === idx ? (
+                <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-[0.95] text-foreground">
+                  {s.title}
+                </h1>
+              ) : (
+                <p className="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-[0.95] text-foreground" aria-hidden="true">
+                  {s.title}
+                </p>
+              )}
               <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
                 {s.subtitle}
               </p>

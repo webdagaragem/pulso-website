@@ -1,4 +1,5 @@
 import { Check, Target, Telescope, Zap } from "lucide-react";
+import { Seo } from "@/components/Seo";
 
 const values = [
   "Resultado acima do discurso",
@@ -13,12 +14,13 @@ const values = [
 const Sobre = () => {
   return (
     <div className="container py-16 md:py-24 max-w-5xl">
+      <Seo path="/sobre" />
       <span className="text-primary font-semibold uppercase tracking-[0.2em] text-sm">Sobre a Pulso</span>
       <h1 className="mt-3 font-display text-5xl md:text-6xl font-extrabold uppercase leading-none">Quem é a Pulso?</h1>
       
       <div className="mt-8 space-y-6 text-lg text-muted-foreground leading-relaxed max-w-3xl">
         <p>
-          A Pulso Tecnologia e Serviços é uma empresa especializada em mecânica agrícola e agricultura de precisão, com atuação técnica direta no campo e foco em resultado real para o produtor. Sediada em Juara — MT, a empresa atende produtores rurais com soluções completas que unem assistência especializada, tecnologia de precisão e suporte confiável do início ao fim da operação.
+          A Pulso é uma oficina de máquinas agrícolas em Juara, no Mato Grosso. Faz manutenção e reparo de tratores, colheitadeiras, pulverizadores, plantadeiras e implementos, com atuação técnica direta na lavoura e foco em resultado real para o produtor.
         </p>
         <p>
           A Pulso também atua como concessionária Topcon — uma das marcas mais reconhecidas globalmente em tecnologia de posicionamento e agricultura de precisão. Isso significa que o produtor encontra em um só lugar equipamentos de alto nível, instalação especializada e suporte técnico contínuo.

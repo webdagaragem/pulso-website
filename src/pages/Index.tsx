@@ -1,4 +1,5 @@
 import { HeroSlider } from "@/components/HeroSlider";
+import { Seo } from "@/components/Seo";
 import { Gallery } from "@/components/Gallery";
 import { Testimonials } from "@/components/Testimonials";
 import { Award, Cpu, Target } from "lucide-react";
@@ -9,7 +10,7 @@ const highlights = [
   {
     icon: Award,
     title: "Equipe Técnica Qualificada",
-    desc: "Profissionais especializados com anos de experiência em máquinas agrícolas e tecnologias de precisão.",
+    desc: "Mecânicos de tratores, colheitadeiras, pulverizadores e plantadeiras, com atendimento direto na lavoura.",
   },
   {
     icon: Cpu,
@@ -26,6 +27,7 @@ const highlights = [
 const Index = () => {
   return (
     <>
+      <Seo path="/" />
       <HeroSlider />
 
       <section className="bg-[#0a0a0a] py-12 md:py-20">
@@ -38,11 +40,11 @@ const Index = () => {
               Por que escolher a Pulso?
             </span>
             <h2 className="mt-4 font-display text-4xl md:text-5xl font-extrabold uppercase leading-tight text-foreground">
-              Tecnologia e Expertise que Geram{" "}
-              <span className="text-primary">Resultado</span> no Campo
+              Assistência técnica para o{" "}
+              <span className="text-primary">agro</span> no campo
             </h2>
             <p className="mt-5 text-base md:text-lg text-muted-foreground max-w-[640px] mx-auto leading-relaxed">
-              A Pulso combina equipe técnica altamente qualificada com produtos e tecnologias de alto nível — levando ao produtor rural soluções eficientes, ágeis e confiáveis diretamente no campo.
+              A Pulso é oficina de máquinas agrícolas em Juara, no Mato Grosso. Faz manutenção e reparo de tratores, colheitadeiras, pulverizadores, plantadeiras e implementos, e é concessionária oficial Topcon para monitores e pilotos automáticos no Médio Norte.
             </p>
           </div>
 

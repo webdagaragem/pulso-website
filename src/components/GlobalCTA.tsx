@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import hero1 from "@/assets/hero-1.webp";
 
 const WHATSAPP_HREF =
   "https://wa.me/5566996615516?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações.";
@@ -17,7 +18,7 @@ export const GlobalCTA = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-fixed pointer-events-none z-0"
         style={{ 
-          backgroundImage: `url('/src/assets/hero-1.webp')`,
+          backgroundImage: `url('${hero1}')`,
           filter: "grayscale(100%) saturate(0)",
           opacity: 0.12
         }}

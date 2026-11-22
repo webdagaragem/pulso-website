@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
+import { Seo } from "@/components/Seo";
 
 const schema = z.object({
   nome: z.string().trim().min(2, "Informe seu nome").max(100),
@@ -37,6 +38,7 @@ const Contato = () => {
 
   return (
     <div className="container py-16 md:py-24">
+      <Seo path="/contato" />
       <div className="max-w-3xl">
         <span className="text-primary font-semibold uppercase tracking-[0.2em] text-sm">Atendimento</span>
         <h1 className="mt-3 font-display text-5xl md:text-6xl font-extrabold uppercase leading-none">Fale com a Pulso</h1>

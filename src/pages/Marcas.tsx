@@ -1,3 +1,5 @@
+import { Seo } from "@/components/Seo";
+
 const brands = [
   "Massey Ferguson",
   "Valtra",
@@ -9,6 +11,7 @@ const brands = [
 const Marcas = () => {
   return (
     <div className="container py-16 md:py-24">
+      <Seo path="/marcas" />
       <div className="max-w-3xl">
         <span className="text-primary font-semibold uppercase tracking-[0.2em] text-sm">Parceiros</span>
         <h1 className="mt-3 font-display text-5xl md:text-6xl font-extrabold uppercase leading-none">Marcas com as Quais Trabalhamos</h1>
